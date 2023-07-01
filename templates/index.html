@@ -1,0 +1,80 @@
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arbor-Chatbot</title>
+</head>
+<body>
+    <h1>Chatbot</h1>
+    <div id="chat-container">
+        <div id="messages"></div>
+        <input type="text" id="user-input" />
+        <button id="send-btn">Send</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='chatbot.js') }}"></script>
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="en-in">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbor-Chatbot</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">x
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+    #chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 70vh; /* Adjust the height as needed */
+}
+
+#messages {
+  flex-grow: 1;
+}
+
+#input-container {
+  display: flex;
+}
+
+#user-input {
+  flex-grow: 1;
+}
+
+#send-btn {
+  margin-left: 8px; /* Adjust the margin as needed */
+}
+</style>
+<body>
+    <h1 font-family: 'Nunito', sans-serif;><b><center>Arbor-Chatbot</center></b></h1>
+
+<!--
+    <div id="chat-container">
+        <div id="messages"></div>
+        <input type="text" id="user-input" />
+    </div>
+    <div>
+        <button id="send-btn">Send</button> 
+    </div>
+
+    -->
+
+    <div id="chat-container">
+        <div id="messages"></div>
+        <div id="input-container">
+            <input type="text" id="user-input" placeholder="   Send a message" />
+            <button id="send-btn" title="Send Message"">📤</button>
+        </div>
+    </div>
+   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='chatbot.js') }}"></script>
+</body>
+</html>
